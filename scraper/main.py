@@ -6,6 +6,8 @@ from database import MySQLHandler
 from notification import EmailNotifier
 from scraper_functions import get_latest_events_up_to_target, scrape_event_fights
 
+os.makedirs('scraper/logs', exist_ok=True)
+
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
